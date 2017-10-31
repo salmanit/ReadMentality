@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar_normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rd_default_logo_rect" />
+
+                <ImageView
+                    android:id="@+id/iv_start"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/rd_start_play_white"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/layout_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#90ffffff"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/need_buy_hint"
+                        android:textColor="#494949"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="￥0.0"
+                        android:textColor="#F5393D"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <com.xr.ruidementality.widget.TextViewWithBg
+                        android:id="@+id/tv_top_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="立即购买"
+                        android:textColor="@color/white"
+                        app:tv_corner_radius="5dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#f4f4f4"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_bo"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:src="@mipmap/rd_music_icon" />
+
+                <TextView
+                    android:id="@+id/tv_vd_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_bo"
+                    android:text="0"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/rd_share_v" />
+
+                <ImageView
+                    android:id="@+id/iv_down_state"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@mipmap/rd_play_down" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fff">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_cover_album"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rd_default_logo_rect"
+                    app:riv_corner_radius="40dp" />
+
+                <View
+                    android:id="@+id/center_line"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/tv_album_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/center_line"
+                    android:layout_toRightOf="@+id/iv_cover_album"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxEms="12"
+                    android:text="专辑名字"
+                    android:textColor="#494949"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_music_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/center_line"
+                    android:layout_toRightOf="@+id/iv_cover_album"
+                    android:text="0首声音"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <com.xr.ruidementality.widget.TextViewWithBg
+                    android:id="@+id/tv_subscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="+ 订阅"
+                    android:textColor="@color/default_color_theme"
+                    app:tv_bg_color="#fff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

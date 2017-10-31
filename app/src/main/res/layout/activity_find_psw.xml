@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/login_toolbar_color"
+    tools:context="com.xr.ruidementality.ui.ActivityFindPsw">
+    <include layout="@layout/layout_toolbar_normal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/phone_num_find"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:hint="@string/rd_login_hint_phone"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:phoneNumber="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/default_hint_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/default_divider_line" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/auth_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:hint="@string/rd_login_hint_code"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textColorHint="@color/default_hint_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_get_auth"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#888888"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/rd_get_phone_code"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/default_divider_line" />
+
+        <EditText
+            android:id="@+id/psd_find"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:hint="@string/rd_find_psw_new_psw"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/default_hint_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/default_divider_line" />
+
+        <com.xr.ruidementality.widget.TextViewWithBg
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/rd_find_psw_ok"
+            android:textColor="@color/default_color_theme"
+            android:textSize="18sp"
+            app:tv_bg_color="#00000000"
+            app:tv_bg_stroke_color="@color/default_color_theme"
+            app:tv_corner_radius="5dp"
+            app:tv_stroke_width="1dp" />
+
+    </LinearLayout>
+</LinearLayout>

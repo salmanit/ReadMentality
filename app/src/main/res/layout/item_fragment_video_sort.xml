@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f4f4f4" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_video_cover"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/rd_play_for_video_cover" />
+
+            <TextView
+                android:id="@+id/tv_video_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:lines="1"
+                android:text="12'23"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/rd_horizontal_bg"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="."
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="5dp"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        android:textColor="#555555"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_tags"
+            android:layout_toLeftOf="@+id/iv_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@mipmap/rd_share_v" />
+    </RelativeLayout>
+
+</LinearLayout>

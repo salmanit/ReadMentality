@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/selector_default_white_gray"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#5d5d5d" />
+
+    <RelativeLayout
+        android:id="@+id/layout_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="65dp"
+        android:layout_toRightOf="@+id/tv_position">
+
+        <ImageView
+            android:id="@+id/iv_gif"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_gif"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="第一章序言"
+            android:textColor="#5d5d5d" />
+
+        <ImageView
+            android:id="@+id/iv_count_logo"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/tv_play_count"
+            android:layout_below="@id/tv_music_title"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/rd_icon_small_time" />
+
+        <TextView
+            android:id="@+id/tv_play_count"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_music_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_count_logo"
+            android:text="1"
+            android:textColor="#5d5d5d"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_duration_logo"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/tv_play_count"
+            android:layout_below="@id/tv_music_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_play_count"
+            android:src="@mipmap/rd_icon_small_time" />
+
+        <TextView
+            android:id="@+id/tv_play_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_play_count"
+            android:layout_below="@id/tv_music_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_duration_logo"
+            android:text="1111111"
+            android:textColor="#5d5d5d"
+            android:textSize="12sp" />
+
+        <com.xr.ruidementality.widget.TextViewWithBg
+            android:id="@+id/tv_music_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_play_count"
+            android:layout_below="@id/tv_music_title"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_play_duration"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="试听"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            app:tv_bg_color="#28B540"
+            app:tv_corner_radius="3dp" />
+    </RelativeLayout>
+
+    <com.xr.ruidementality.widget.TextViewWithBg
+        android:id="@+id/tv_music_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:minWidth="60dp"
+        android:padding="5dp"
+        android:text="0.6瑞点"
+        android:textColor="@color/default_color_theme"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:tv_bg_color="#00000000"
+        app:tv_bg_stroke_color="@color/default_color_theme"
+        app:tv_corner_radius="4dp"
+        app:tv_stroke_width="1dp" />
+
+    <ImageView
+        android:id="@+id/iv_state"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/rd_play_down"
+        android:visibility="gone" />
+</RelativeLayout>

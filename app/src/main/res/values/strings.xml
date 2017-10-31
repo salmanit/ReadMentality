@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">瑞得心理2</string>
+    <string name="rd_login">登录</string>
+    <string name="rd_register">注册</string>
+    <string name="rd_get_phone_code">获取验证码</string>
+    <string name="rd_forget_psw">忘记密码?</string>
+    <string name="rd_login_hint_phone">请输入手机号码</string>
+    <string name="rd_login_hint_psw">请输入6-16位密码</string>
+    <string name="rd_login_hint_code">验证码</string>
+    <string name="rd_login_read">已阅读并同意</string>
+    <string name="rd_login_deal">《注册协议》</string>
+    <string name="rd_login_type1">账号密码登录</string>
+    <string name="rd_login_type2">手机号码快捷登录</string>
+    <string name="rd_login_phone_error">请输入有效的手机号码</string>
+    <string name="rd_login_psw_error">为保证账号安全，请输入6-12位的数字或字母组合</string>
+    <string name="rd_login_code_error">请输入验证码</string>
+    <string name="rd_register_protocol_error">你没有同意注册协议</string>
+    <string name="rd_find_psw_ok">确认</string>
+    <string name="rd_find_psw_new_psw">请输入新密码</string>
+
+    <string name="rd_format_ruidian">%1$s瑞点</string>
+    <string name="rd_format_ruidian_single">%1$s瑞点/首</string>
+
+    <string name="rd_not_subscription">主人，这里空空的，我们再去逛逛？</string>
+    <string name="rd_not_consume_record">暂无消费记录~~</string>
+    <string name="rd_not_money">暂无充值记录~~</string>
+    <string name="rd_not_hist">一入心门深似海，踏足声控难为停， 你还不懂不懂~</string>
+    <string name="rd_not_message">信箱是空哒~</string>
+    <string name="rd_not_bought">我连一毛钱的饭饭都没吃过~</string>
+    <string name="rd_not_video">主人，这里什么也没有</string>
+
+    <string name="rd_not_net_and_refresh">主人，网络不给力，请连上网络吧！</string>
+    <string name="rd_state_loading">正在加载中，等等偶~</string>
+
+    <string name="rd_me_not_login">您还未登录</string>
+    <string name="rd_me_not_login_toast">轻按即可注册或登录</string>
+    <string name="format_recharge_money_show"><![CDATA[<font color="#F5393D" >%1$s</font>瑞点]]></string>
+    <string name="need_buy_hint">瑞得心理付费节目，请充值瑞点，收听更多精彩</string>
+</resources>

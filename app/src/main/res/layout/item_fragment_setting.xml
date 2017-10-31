@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:paddingLeft="35dp"
+    android:paddingRight="25dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:textSize="16sp"
+        tools:text="info" />
+
+    <ImageView
+        android:id="@+id/iv_arrow_right"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/rd_arrow_right_gray" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/iv_arrow_right"
+        android:gravity="right|center_vertical"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_switch"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/rd_switch_open"
+        android:visibility="gone" />
+</RelativeLayout>

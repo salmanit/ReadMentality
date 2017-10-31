@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="default_color_theme">#F5393D</color>
+    <color name="default_color_toolbar_bg">#FFFFFF</color>
+    <color name="default_title_color">#262626</color>
+    <color name="default_title_color2">#000000</color>
+    <color name="default_hint_color">#cacaca</color>
+    <color name="default_divider_line">#C9C9C9</color>
+    <color name="default_bg_f4">#f4f4f4</color>
+    <color name="color96">#969696</color>
+
+    <color name="login_toolbar_color">#f4f4f4</color>
+    <color name="txt_small_color">#4a4a4a</color>//小标题
+    <color name="txt_main_body_color">#303030</color>//正文
+    <color name="txt_description_color">#616161</color>//描述
+    <color name="txt_annotation_color">#9B9B9B</color>//注释
+    <color name="album_state_bg_blue">#81B9EF</color>
+    <color name="h2_color">#262626</color>
+    <color name="white">#ffffff</color>
+    <color name="line_color_E9">#E9E9E9</color>
+</resources>

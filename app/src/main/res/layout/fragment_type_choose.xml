@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_f4"
+    android:clickable="true"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_color_toolbar_bg"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_toolbar_height"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="@color/default_title_color2"
+            android:textSize="@dimen/custom_toolbar_title_size" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="14dp"
+            android:src="@mipmap/rd_arrow_left_black" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@mipmap/rd_icon_search" />
+    </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/default_divider_line" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom" />
+</LinearLayout>

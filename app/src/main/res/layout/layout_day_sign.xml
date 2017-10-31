@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_day_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_day_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_day_pic"
+            android:layout_marginLeft="7dp"
+            android:padding="15dp"
+            android:text="2017-04-14"
+            android:textColor="#bdbdbd"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/iv_day_pic"
+            android:layout_margin="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/rd_gray_share" />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/iv_day_pic"
+            android:layout_margin="15dp"
+            android:layout_toLeftOf="@+id/iv_share"
+            android:scaleType="fitXY"
+            android:src="@mipmap/rd_me_item_collection" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_like"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/rd_white_dot_line" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/rd_white_x_mark"
+        android:visibility="gone" />
+</FrameLayout>

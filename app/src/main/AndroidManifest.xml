@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xr.ruidementality">
+
+    <permission
+        android:name="com.xr.ruidementality.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- 允许程序禁用键盘锁 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="com.xr.ruidementality.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- 允许程序在手机屏幕关闭后后台进程仍然运行 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 访问电话状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许读写系统设置项 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 允许振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 挂载、反挂载外部文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 访问网络连接，可能产生GPRS流量 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读取系统底层日志 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 允许程序从非系统拨号器里输入电话号码 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 通过WiFi或移动基站的方式获取用户错略的经纬度信息，定位精度大概误差在30~1500米 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <!-- 获取网络信息状态，如当前的网络连接是否有效 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <!-- 发送短信 -->
+    <!-- <uses-permission android:name="android.permission.SEND_SMS"></uses-permission> -->
+    <!-- 接收短信 -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission> -->
+    <!-- 读取短信内容 -->
+    <!-- <uses-permission android:name="android.permission.READ_SMS"></uses-permission> -->
+    <!-- 允许程序获取当前或最近运行的应用 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 设置调试程序，一般用于开发 -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <!-- 显示系统窗口 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 访问GMail账户列表 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 允许程序请求验证从AccountManager -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 允许程序管理AccountManager中的账户列表 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 获取当前WiFi接入的状态以及WLAN热点的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/rd_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/rd_logo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.ActivityWelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ActivityHome"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.ActivityGuide" />
+        <activity android:name=".ui.ActivityLogin" />
+        <activity android:name=".ui.ActivityRegisterProtocol" />
+        <activity android:name=".ui.ActivityFindPsw" />
+
+
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

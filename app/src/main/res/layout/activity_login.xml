@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color_toolbar_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.xr.ruidementality.ui.ActivityLogin">
+
+    <include layout="@layout/layout_toolbar_normal" />
+
+    <ViewAnimator
+        android:id="@+id/va_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_login" />
+
+        <include layout="@layout/fragment_register" />
+    </ViewAnimator>
+    <!--<com.xr.ruidementality.widget.ViewPagerNotScroll-->
+    <!--android:id="@+id/vp_login"-->
+    <!--android:background="#fff"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <TextView
+        android:id="@+id/tv_share_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="────── 第三方帐户登录 ──────"
+        android:textColor="@color/default_hint_color"
+        android:textSize="16sp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside">
+
+        <LinearLayout
+            android:id="@+id/layout_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/layout_qq"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@mipmap/rd_share_wechat"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="微信登陆"
+                android:textColor="#7c7c7c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@+id/layout_wechat"
+            app:layout_constraintRight_toLeftOf="@+id/layout_sina"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@mipmap/rd_share_qq"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="QQ登陆"
+                android:textColor="#7c7c7c"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@+id/layout_qq"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@mipmap/rd_share_sina"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="微博登陆"
+                android:textColor="#7c7c7c"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

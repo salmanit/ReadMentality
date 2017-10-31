@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_me"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/selector_default_white_gray"
+    android:clickable="true"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp">
+
+    <ImageView
+        android:id="@+id/iv_item_logo"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_item_logo"
+        android:text="我的瑞点"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/iv_item_right"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/rd_arrow_right_gray" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_item_right"
+        android:paddingRight="10dp"
+        android:textColor="#555555"
+        android:textSize="14sp" />
+</RelativeLayout>

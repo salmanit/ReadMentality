@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="audio_types">
+        <item>最新</item>
+        <item>最热</item>
+    </string-array>
+
+    <string-array name="me_items">
+        <item>历史收听</item>
+        <item>我的瑞点</item>
+        <item>我的消息</item>
+        <item>我的收藏</item>
+        <item>邀请好友</item>
+        <item>我的优惠</item>
+        <item>入驻瑞得</item>
+        <item>意见反馈</item>
+        <item>设置</item>
+    </string-array>
+</resources>

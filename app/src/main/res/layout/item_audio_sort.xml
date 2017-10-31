@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_default_white_gray"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/album_img_cv"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="5dp">
+
+
+        <ImageView
+            android:id="@+id/iv_fm_gd"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/rd_album_cover_padding_b" />
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/album_info_ll"
+                android:layout_toLeftOf="@+id/tv_ruidian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.xr.ruidementality.widget.TextViewWithBg
+                        android:id="@+id/is_finish_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="1dp"
+                        android:text="完本"
+                        android:textColor="#fff"
+                        android:textSize="10sp"
+                        android:visibility="visible"
+                        app:tv_bg_color="@color/album_state_bg_blue"
+                        app:tv_corner_radius="3dp" />
+
+                    <TextView
+                        android:id="@+id/tv_fm_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxEms="10"
+                        android:paddingBottom="1dp"
+                        android:paddingTop="1dp"
+                        android:singleLine="true"
+                        android:text="Lilian 聊心理学"
+                        android:textColor="@color/h2_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_album_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxEms="12"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="Lilian 聊心理学"
+                    android:textColor="@color/color96"
+                    android:textSize="12sp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_tags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <com.xr.ruidementality.widget.TextViewWithBg
+                android:id="@+id/tv_ruidian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:padding="5dp"
+                android:textColor="@color/default_color_theme"
+                android:textSize="10sp"
+                app:tv_bg_color="#00000000"
+                app:tv_bg_stroke_color="@color/default_color_theme"
+                app:tv_corner_radius="3dp"
+                app:tv_stroke_width="1dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="@color/default_divider_line" />
+    </LinearLayout>
+
+</LinearLayout>

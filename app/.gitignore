@@ -1,0 +1,6 @@
+/build
+src/androidTest
+src/test
+app.iml
+/src/main/java/com/xr/ruidementality/app/APIManager.kt
+/src/main/java/com/xr/ruidementality/app/MyService.kt

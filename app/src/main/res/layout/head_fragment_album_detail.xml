@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/rd_default_logo_rect"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <com.xr.ruidementality.widget.TextViewWithBg
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="2dp"
+        android:text="完本"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_cover"
+        app:tv_bg_color="#81b9ef"
+        app:tv_corner_radius="3dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="快乐亲子课堂"
+        android:textColor="#000"
+        app:layout_constraintLeft_toRightOf="@+id/tv_state"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/tv_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="更新：2017-10-11"
+        android:textColor="@color/color96"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cover"
+        app:layout_constraintLeft_toRightOf="@+id/iv_cover" />
+
+    <TextView
+        android:id="@+id/tv_catalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="分类：亲子 微课堂"
+        android:textColor="@color/color96"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_update_time"
+        app:layout_constraintLeft_toRightOf="@+id/iv_cover" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="主播：德瑞姆少儿心理"
+        android:textColor="@color/color96"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_catalog"
+        app:layout_constraintLeft_toRightOf="@+id/iv_cover" />
+
+    <View
+        android:id="@+id/space1"
+        android:layout_width="368dp"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cover" />
+
+    <com.xr.ruidementality.widget.TextViewWithBg
+        android:id="@+id/tv_subscription"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:text="订阅"
+        android:textColor="@color/default_color_theme"
+        android:textSize="13sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_buy_more"
+        app:layout_constraintTop_toBottomOf="@+id/space1"
+        app:tv_bg_color="@android:color/transparent"
+        app:tv_bg_stroke_color="@color/default_color_theme"
+        app:tv_corner_radius="4dp"
+        app:tv_stroke_width="1dp" />
+
+    <com.xr.ruidementality.widget.TextViewWithBg
+        android:id="@+id/tv_buy_more"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="批量购买"
+        android:textColor="@color/default_color_theme"
+        android:textSize="13sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_subscription"
+        app:layout_constraintRight_toLeftOf="@+id/tv_buy_album"
+        app:layout_constraintTop_toBottomOf="@+id/space1"
+        app:tv_bg_color="@android:color/transparent"
+        app:tv_bg_stroke_color="@color/default_color_theme"
+        app:tv_corner_radius="4dp"
+        app:tv_stroke_width="1dp" />
+
+    <com.xr.ruidementality.widget.TextViewWithBg
+        android:id="@+id/tv_buy_album"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="全辑10瑞点"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_buy_more"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space1"
+        app:tv_bg_color="@color/default_color_theme"
+        app:tv_corner_radius="4dp"
+        app:tv_stroke_width="1dp" />
+
+    <View
+        android:id="@+id/tv_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/default_divider_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subscription" />
+
+    <TextView
+        android:id="@+id/tv_intro_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="专辑简介"
+        android:textColor="@color/default_color_theme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_line" />
+
+    <TextView
+        android:id="@+id/tv_album_intro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="test说了算了冷死了闪乱神乐说了算了闪乱神乐test说了算了冷死了闪乱神乐说了算了闪乱神乐"
+        android:textColor="#474747"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_intro_tag" />
+
+    <RelativeLayout
+        android:id="@+id/layout_songs_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#22000000"
+        android:paddingBottom="7dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="7dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_album_intro">
+
+        <TextView
+            android:id="@+id/tv_song_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已更新9首"
+            android:textColor="#555"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
